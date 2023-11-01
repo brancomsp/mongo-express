@@ -47,8 +47,8 @@ if (process.env.VCAP_SERVICES) {
 }
 
 const basicAuth = 'ME_CONFIG_BASICAUTH';
-const basicAuthUsername = 'ME_CONFIG_BASICAUTH_USERNAME';
-const basicAuthPassword = 'ME_CONFIG_BASICAUTH_PASSWORD';
+const basicAuthUsername = 'mongouser';
+const basicAuthPassword = 'mongopwd';
 
 function getBoolean(str, defaultValue = false) {
   return str ? str.toLowerCase() === 'true' : defaultValue;
